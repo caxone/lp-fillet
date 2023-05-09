@@ -14,11 +14,13 @@ export const Container = styled.div`
 
 export const BackGround = styled.div`
     display: flex;
-    width: 1379px;
+    width: 1340px;
     justify-content:center;
     background-image: url(${backgroundImg});
     background-repeat: no-repeat;
-`;
+    background-size: 96% 100%;
+    background-position: left 40px top;
+    `;
 
 export const BackGroundStar = styled.div`
     display: flex;
