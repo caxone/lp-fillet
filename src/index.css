@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;700&family=Inter&display=swap');
 body {
     margin: 0;
+    overflow-x: hidden;
+
 }

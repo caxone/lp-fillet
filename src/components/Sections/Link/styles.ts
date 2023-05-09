@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import backgroundImg from '../../../images/background.png';
+import backgroundImg from '../../../images/Vector.png';
+import backgroundImgStars from '../../../images/Group.png';
 
 export const Container = styled.div`
     display: flex;
@@ -7,77 +8,49 @@ export const Container = styled.div`
     background-color: #9B4EF7;
     width: 100%;
     height: 768px;
+    padding-left:60px;
     position: relative;
 `;
 
 export const BackGround = styled.div`
     display: flex;
+    width: 1379px;
+    justify-content:center;
     background-image: url(${backgroundImg});
     background-repeat: no-repeat;
-    position: relative;
 `;
 
-export const Logo = styled.img`
-    margin-left: 112px;
-    margin-top: 42px;
+export const BackGroundStar = styled.div`
+    display: flex;
+    background-image: url(${backgroundImgStars});
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: right center;
+    margin-right: 60px;
+    margin-top: 20px;
+    width: 100%;
 `;
 
 export const Content = styled.div`
-    width: 50%;
+    width: 60%;
     height: auto;
     text-align: center;
-    margin-left: 100px;
+    margin-left: 240px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 `;
 
-export const ButtonsContainer = styled.div`
-    position: absolute;
-    top: 52px;
-    right: 150px;
-`;
-
-export const Buttons = styled.button`
-    border-radius: 40px;
-    padding: 16px;
-    color: #FFF;
-    background: #150202;
-    margin-left: 15px;
-    cursor: pointer;
-    font-family: Inter;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 11px;
-    letter-spacing: 0em;
-    text-align: center;
-`;
 
 export const Title  =styled.h1`
     font-family: 'Familjen Grotesk', sans-serif;    
-    font-size: 110px;
+    font-style: normal;
     font-weight: 700;
-    letter-spacing: 0em;
-    line-height: 86.9px;
-    text-align: center;
-    margin: 0 0 32px 0;
-    color: #F9EAE1;
-`;
-
-export const ContainerInfo = styled.div`
-    width: 414px;
-`;
-
-export const Info = styled.span`
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #F9EAE1;
-    margin-bottom: 32px;
+    font-size: 98px;
+    line-height: 92%;    
+    text-align: center;    
+    color: #FFFFFF;
 `;
 
 export const ButtonInfo = styled.button`

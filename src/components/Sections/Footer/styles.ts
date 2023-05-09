@@ -12,6 +12,5 @@ export const Container = styled.div`
     line-height: 79%;
     height: 81px;
     text-align: center;
-
     color: #000000;
 `;

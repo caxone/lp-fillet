@@ -5,7 +5,11 @@ import {
     Title,
     ContainerInfo,
     Info,
-    InfoItem, TitleInfo
+    InfoItem, 
+    TitleInfo,
+    BackGround,
+    ElipseOrange,
+    ElipsePurple
 } from './styles';
 
 const infos = [
@@ -33,18 +37,22 @@ const infos = [
 
 const About: React.FC = () => ( 
     <Container>
-        <Content>
-            <Title>Feito para todos</Title>
-            <ContainerInfo>
-                {infos.map((el) => (
-                    <InfoItem key={el.title}>
-                        <img src={require(`../../../images/${el.img}`)} alt={el.title} />
-                        <TitleInfo>{el.title}</TitleInfo>
-                        <Info>{el.text}</Info>
-                    </InfoItem> 
-                ))}
-            </ContainerInfo>
-        </Content>
+        <BackGround>
+            <ElipseOrange src={require(`../../../images/Ellipse2.png`)} alt="Elipse"/>
+            <ElipsePurple src={require(`../../../images/Ellipse1.png`)} alt="Elipse"/>
+            <Content>
+                <Title>Feito para todos</Title>
+                <ContainerInfo>
+                    {infos.map((el) => (
+                        <InfoItem key={el.title}>
+                            <img src={require(`../../../images/${el.img}`)} alt={el.title} />
+                            <TitleInfo>{el.title}</TitleInfo>
+                            <Info>{el.text}</Info>
+                        </InfoItem> 
+                    ))}
+                </ContainerInfo>
+            </Content>
+        </BackGround>
     </Container>
 );
 

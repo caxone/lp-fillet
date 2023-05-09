@@ -1,29 +1,25 @@
 import React from 'react';
-import {Container, 
+import {
+    Container, 
     BackGround, 
-    Logo, 
+    BackGroundStar, 
     Content, 
-    ButtonsContainer, 
-    Buttons, 
     Title, 
-    Info,
-    ContainerInfo, 
     ButtonInfo
 } from './styles';
 
 const Link: React.FC = () => (
     <Container>
         <BackGround>
+            <BackGroundStar>
 
-            <Content>
-                <Title>Transforme seus estudos</Title>
-                <ContainerInfo>
-                    <Info>Conheça já o futuro da educação imersiva, esse é o Literaverso, uma plataforma única de conteúdo interativo com seu próprio metaverso.</Info>
-                </ContainerInfo>
-                <ButtonInfo>
-                    Saiba mais
-                </ButtonInfo>               
-            </Content>
+                <Content>
+                    <Title>Entre já no futuro da educação</Title>                                        
+                    <ButtonInfo>
+                        Entrar
+                    </ButtonInfo>               
+                </Content>
+            </BackGroundStar>
         </BackGround>
     </Container>
 );
