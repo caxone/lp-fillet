@@ -1,49 +1,49 @@
 import styled from 'styled-components';
+import backgroundImg from '../../../images/background-about.png';
 
 export const Container = styled.div`
     display: flex;
     justify-content: center;
-    background: #F9EAE1;
+    background-color: #9B4EF7;
     width: 100%;
     height: 768px;
     position: relative;
 `;
 
+export const BackGround = styled.div`
+    display: flex;
+    background-image: url(${backgroundImg});
+    background-repeat: no-repeat;
+    position: relative;
+`;
 
 export const Content = styled.div`
     min-width: 1441px;
     height: 100%;
     text-align: center;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: center;
 `;
 
 export const Title  =styled.h1`
     font-family: 'Familjen Grotesk', sans-serif;    
+    font-size: 64px;
     font-weight: 700;
-    font-size: 110px;
+    letter-spacing: 0em;
     line-height: 92%;
-    width: 726px;
-    text-align: center;
+    text-align: left;
+    color: #F9EAE1;
+    margin-left: 81px;
+    width:413px;
 `;
 
 export const ContainerInfo = styled.div`
-    display: flex;
-    width: 100%;
+    width: 414px;
     text-align: left;
     margin-left: 81px;
 `;
-
-
-export const InfoItem = styled.div`
-    display: block;
-    width: 305px;
-    text-align: left;
-    margin: 10px;
-`;
-
 
 export const Info = styled.span`
     font-family: 'Inter', sans-serif;
@@ -52,14 +52,5 @@ export const Info = styled.span`
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
-    color: #240506;
-`;
-
-
-export const TitleInfo  = styled.h2`
-    font-family: 'Familjen Grotesk';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
+    color: #F9EAE1;
 `;

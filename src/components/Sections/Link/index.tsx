@@ -10,23 +10,11 @@ import {Container,
     ContainerInfo, 
     ButtonInfo
 } from './styles';
-import logoImg from '../../../images/Logo.png';
 
-const Header: React.FC = () => (
+const Link: React.FC = () => (
     <Container>
         <BackGround>
-            <Logo src={logoImg} alt="Logo" width="123" height="62" />
-            <ButtonsContainer>
-                <Buttons>
-                    Entrar
-                </Buttons>
-                <Buttons>
-                    Sobre
-                </Buttons>
-                <Buttons>
-                    Contato
-                </Buttons>
-            </ButtonsContainer>
+
             <Content>
                 <Title>Transforme seus estudos</Title>
                 <ContainerInfo>
@@ -40,4 +28,4 @@ const Header: React.FC = () => (
     </Container>
 );
 
-export default Header;
+export default Link;

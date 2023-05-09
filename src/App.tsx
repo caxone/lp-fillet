@@ -8,8 +8,8 @@ import Presentation from './components/Sections/Presentation';
 const App: React.FC = () => {
   return <>
     <Header />
-    <About />
     <Presentation />
+    <About />
     <Link />
     <Footer />
   </>;
