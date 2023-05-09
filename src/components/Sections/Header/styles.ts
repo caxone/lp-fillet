@@ -15,6 +15,7 @@ export const BackGround = styled.div`
     background-image: url(${backgroundImg});
     background-repeat: no-repeat;
     position: relative;
+    width: 1441px;
 `;
 
 export const Logo = styled.img`
@@ -26,17 +27,20 @@ export const Content = styled.div`
     width: 50%;
     height: auto;
     text-align: center;
-    margin-left: 100px;
+    margin-left: 125px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin-top: 40px;
 `;
 
 export const ButtonsContainer = styled.div`
-    position: absolute;
-    top: 52px;
-    right: 150px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    text-align: right;
+    margin-right: 65px;
+    margin-top:50px;
 `;
 
 export const Buttons = styled.button`

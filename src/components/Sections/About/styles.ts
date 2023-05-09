@@ -44,7 +44,7 @@ export const ContainerInfo = styled.div`
     display: flex;
     width: 100%;
     text-align: left;
-    margin-left: 81px;
+    margin-left: 150px;
 `;
 
 
