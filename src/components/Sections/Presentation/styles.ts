@@ -9,7 +9,7 @@ export const Container = styled.div`
     height: 768px;
     position: relative;
     @media screen and (max-width: 768px) {
-        height: auto; /* Alterar a altura para que o conteúdo se ajuste automaticamente */
+        height: 220px;
         
     }
 `;
@@ -34,8 +34,8 @@ export const Content = styled.div`
     justify-content: center;
 
     @media screen and (max-width: 768px) {
-        height: auto; /* Alterar a altura para que o conteúdo se ajuste automaticamente */
-        padding: 16px; /* Adicionar algum espaçamento ao redor do conteúdo para evitar que fique muito próximo à borda da tela */
+        height: auto;
+        padding: 16px; 
         width: auto;
 
     }

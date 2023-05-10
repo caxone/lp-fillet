@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import backgroundImg from '../../../images/background.png';
+//import backgroundMobile from '../../../images/background-tablet.png';
 
 export const Container = styled.div`
     display: flex;
@@ -10,7 +11,7 @@ export const Container = styled.div`
     position: relative;
 
     @media screen and (max-width: 768px) {
-        height: auto; /* Alterar a altura para que o conteúdo se ajuste automaticamente */
+        height: auto;
         padding-bottom: 20px;
     }
 `;
@@ -24,7 +25,7 @@ export const BackGround = styled.div`
 
     @media screen and (max-width: 768px) {
         background-size: contain;
-        height: auto; /* Alterar a altura para que o conteúdo se ajuste automaticamente */
+        height: auto;
         width: auto;
         flex-direction: column;
     }
