@@ -10,6 +10,9 @@ export const Container = styled.div`
     height: 768px;
     padding-left:60px;
     position: relative;
+    @media screen and (max-width: 768px) {
+        padding-left:0;
+    }
 `;
 
 export const BackGround = styled.div`
@@ -20,6 +23,9 @@ export const BackGround = styled.div`
     background-repeat: no-repeat;
     background-size: 96% 100%;
     background-position: left 40px top;
+    @media screen and (max-width: 768px) {
+        background-image: none;
+    }
     `;
 
 export const BackGroundStar = styled.div`
@@ -31,6 +37,11 @@ export const BackGroundStar = styled.div`
     margin-right: 60px;
     margin-top: 20px;
     width: 100%;
+    @media screen and (max-width: 768px) {
+        background-size: cover;
+        margin-right: 0;
+
+    }
 `;
 
 export const Content = styled.div`

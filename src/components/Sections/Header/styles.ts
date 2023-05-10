@@ -11,7 +11,7 @@ export const Container = styled.div`
 
     @media screen and (max-width: 768px) {
         height: auto; /* Alterar a altura para que o conteúdo se ajuste automaticamente */
-        padding: 0 16px 16px 16px;/* Adicionar algum espaçamento ao redor do conteúdo para evitar que fique muito próximo à borda da tela */
+        padding-bottom: 20px;
     }
 `;
 
@@ -23,6 +23,7 @@ export const BackGround = styled.div`
     width: 1441px;
 
     @media screen and (max-width: 768px) {
+        background-size: contain;
         height: auto; /* Alterar a altura para que o conteúdo se ajuste automaticamente */
         width: auto;
         flex-direction: column;
@@ -49,6 +50,12 @@ export const Content = styled.div`
     flex-direction: column;
     justify-content: center;
     margin-top: 40px;
+
+    
+    @media screen and (max-width: 768px) {
+        width: auto;
+        margin-left: 0;
+    }
 `;
 
 export const ButtonsContainer = styled.div`

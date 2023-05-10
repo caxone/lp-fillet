@@ -19,6 +19,9 @@ export const BackGround = styled.div`
     background-image: url(${backgroundImg});
     background-repeat: no-repeat;
     position: relative;
+    @media screen and (max-width: 768px) {
+        background-size: cover; /* ajuste o tamanho da imagem de fundo para dispositivos móveis */
+    }
 `;
 
 export const Content = styled.div`
@@ -51,10 +54,10 @@ export const Title  =styled.h1`
     @media screen and (max-width: 768px) {
         text-align: center;
         width: auto;
-        font-size: 50px;
+        font-size: 45px;
         margin-left: 0;
-
-    }
+        margin-top: 0px;
+        margin-bottom: 20px;    }
     
 `;
 
@@ -66,7 +69,6 @@ export const ContainerInfo = styled.div`
     @media screen and (max-width: 768px) {
         text-align: center;
         width: 100%;
-        margin-left: 50px;
         margin-left: 0;
 
     }
