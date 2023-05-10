@@ -150,3 +150,66 @@ export const ButtonInfo = styled.button`
     cursor: pointer;
     border: none;
 `;
+
+export const HeaderContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    height: 60px;
+    padding: 0 20px;
+`;
+
+export const MenuIcon = styled.img`
+    display: none;
+    cursor: pointer;
+    @media (max-width: 768px) {
+        display: block;
+        width: 64px;
+        height: 64px;
+        margin-top: 20px;
+    }
+`;
+
+export const DrawerContainer = styled.div`
+    width: 240px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transform: translateX(-240px);
+    transition: transform 0.3s ease-in-out;
+    @media (max-width: 768px) {
+        transform: translateX(0);
+    }
+`;
+
+export const Nav = styled.nav`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-evenly;
+`;
+
+export const NavItem = styled.div`
+    font-family: 'Inter', sans-serif;
+    color: #FFF;
+    margin-left: 20px;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 11px;
+    letter-spacing: 0em;
+    text-align: center;
+`;
+
+export const LogoContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+`

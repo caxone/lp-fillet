@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Container, 
     BackGround, 
     Logo, 
@@ -9,9 +9,15 @@ import {Container,
     Title, 
     Info,
     ContainerInfo, 
-    ButtonInfo
+    ButtonInfo,
+    MenuIcon, 
+    LogoContainer,
+    DrawerContainer, 
+    Nav, 
+    NavItem 
 } from './styles';
 import logoImg from '../../../images/Logo.png';
+import humburguer from '../../../images/cardapio.png';
 
 const buttons = [
     {
@@ -28,33 +34,46 @@ const buttons = [
     },
 ]
 
-const ButtonsMobile = () => (
-    <ButtonsContainerMobile>
-    {buttons.map(el => (
-        <Buttons>
-            {el.name}
-        </Buttons>
-    ))}
-    </ButtonsContainerMobile>
+const ButtonsMobile = ({isDrawerOpen}: any) => (
+
+    <DrawerContainer style={{ transform: isDrawerOpen ? 'translateX(0)' : 'translateX(-240px)' }}>
+    <Nav>
+        {buttons.map(el => (
+            <NavItem>
+                {el.name}
+            </NavItem>
+        ))}
+
+    </Nav>
+  </DrawerContainer>
+
 );
 
 const ButtonsDesk = () => (
     <ButtonsContainer>
-    {buttons.map(el => (
-        <Buttons>
-            {el.name}
-        </Buttons>
-    ))}
+        {buttons.map(el => (
+            <Buttons>
+                {el.name}
+            </Buttons>
+        ))}
     </ButtonsContainer>
 );
 
-const Header: React.FC = () => (
-    <Container>
+const Header: React.FC = () => {
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+    const toggleDrawer = () => {
+      setIsDrawerOpen(!isDrawerOpen);
+    };
+
+    return  (<Container>
         <BackGround>
-            <div>
+            <LogoContainer>
                 <Logo src={logoImg} alt="Logo" width="123" height="62" />
-            </div>
-            <ButtonsMobile />
+                <MenuIcon src={humburguer} onClick={toggleDrawer} />
+                
+            </LogoContainer>
+
             <Content>
                 <Title>Transforme seus estudos</Title>
                 <ContainerInfo>
@@ -65,8 +84,9 @@ const Header: React.FC = () => (
                 </ButtonInfo>               
             </Content>
             <ButtonsDesk />
+            <ButtonsMobile isDrawerOpen={isDrawerOpen} />
         </BackGround>
-    </Container>
-);
+    </Container>)
+};
 
 export default Header;
