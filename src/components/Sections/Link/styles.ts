@@ -12,6 +12,7 @@ export const Container = styled.div`
     position: relative;
     @media screen and (max-width: 768px) {
         padding-left:0;
+        height: 400px;
     }
 `;
 

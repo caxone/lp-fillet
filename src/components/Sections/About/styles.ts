@@ -13,8 +13,6 @@ export const Container = styled.div`
     }
 `;
 
-
-
 export const BackGround = styled.div`
     display: flex;
     background-image: url(${backgroundImg});
@@ -23,6 +21,7 @@ export const BackGround = styled.div`
     @media screen and (max-width: 768px) {
         max-width: 100%;
         background-size: contain;
+        padding-bottom: 20px;
     }
 `;
 
