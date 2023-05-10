@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import backgroundImg from '../../../images/background.png';
-//import backgroundMobile from '../../../images/background-tablet.png';
+import backgroundMobile from '../../../images/background-mobile-v2.png';
 
 export const Container = styled.div`
     display: flex;
@@ -24,6 +24,8 @@ export const BackGround = styled.div`
     width: 1441px;
 
     @media screen and (max-width: 768px) {
+        background-image: url(${backgroundMobile});
+
         background-size: contain;
         height: auto;
         width: auto;
