@@ -72,19 +72,6 @@ export const ButtonsContainer = styled.div`
 
 `;
 
-export const ButtonsContainerMobile = styled.div`
-    display: none;
-
-    @media screen and (max-width: 768px) {
-        display:block;
-        flex-grow: 1;
-        flex-shrink: 0;
-        text-align: right;
-        margin-right: 65px;
-        margin-top:50px;
-    }
-`;
-
 export const Buttons = styled.button`
     border-radius: 40px;
     padding: 16px;
@@ -122,7 +109,6 @@ export const ContainerInfo = styled.div`
        width: 300px;
 
     }
-
 `;
 
 export const Info = styled.span`
@@ -194,7 +180,6 @@ export const Nav = styled.nav`
     flex-direction: column;
     align-items: center;
     height: 100%;
-    justify-content: space-evenly;
 `;
 
 export const NavItem = styled.div`
@@ -208,6 +193,7 @@ export const NavItem = styled.div`
     line-height: 11px;
     letter-spacing: 0em;
     text-align: center;
+    margin-top: 50px;
 `;
 
 export const LogoContainer = styled.div`
