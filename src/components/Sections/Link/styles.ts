@@ -42,6 +42,11 @@ export const Content = styled.div`
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    @media screen and (max-width: 768px) {
+        width: auto;
+        margin-left: 0;
+
+    }
 `;
 
 
@@ -53,6 +58,10 @@ export const Title  =styled.h1`
     line-height: 92%;    
     text-align: center;    
     color: #FFFFFF;
+    
+    @media screen and (max-width: 768px) {
+        font-size: 50px;
+    }
 `;
 
 export const ButtonInfo = styled.button`

@@ -9,6 +9,7 @@ import {
 
 } from './styles';
 
+
 const About: React.FC = () => ( 
     <Container>
         <BackGround>

@@ -3,7 +3,8 @@ import {Container,
     BackGround, 
     Logo, 
     Content, 
-    ButtonsContainer, 
+    ButtonsContainer,
+    ButtonsContainerMobile,
     Buttons, 
     Title, 
     Info,
@@ -12,13 +13,48 @@ import {Container,
 } from './styles';
 import logoImg from '../../../images/Logo.png';
 
+const buttons = [
+    {
+        name:"Entrar",
+        action: ""
+    },
+    {
+        name:"Sobre",
+        action: ""
+    },
+    {
+        name:"Contato",
+        action: ""
+    },
+]
+
+const ButtonsMobile = () => (
+    <ButtonsContainerMobile>
+    {buttons.map(el => (
+        <Buttons>
+            {el.name}
+        </Buttons>
+    ))}
+    </ButtonsContainerMobile>
+);
+
+const ButtonsDesk = () => (
+    <ButtonsContainer>
+    {buttons.map(el => (
+        <Buttons>
+            {el.name}
+        </Buttons>
+    ))}
+    </ButtonsContainer>
+);
+
 const Header: React.FC = () => (
     <Container>
         <BackGround>
             <div>
                 <Logo src={logoImg} alt="Logo" width="123" height="62" />
             </div>
-
+            <ButtonsMobile />
             <Content>
                 <Title>Transforme seus estudos</Title>
                 <ContainerInfo>
@@ -28,17 +64,7 @@ const Header: React.FC = () => (
                     Saiba mais
                 </ButtonInfo>               
             </Content>
-            <ButtonsContainer>
-                <Buttons>
-                    Entrar
-                </Buttons>
-                <Buttons>
-                    Sobre
-                </Buttons>
-                <Buttons>
-                    Contato
-                </Buttons>
-            </ButtonsContainer>
+            <ButtonsDesk />
         </BackGround>
     </Container>
 );
